@@ -66,3 +66,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### json-server src/core/api/mockUsers.json
+
+To start the server follow to directory of project and enter this command
+
+### npm run-script test:coverage
+
+You can run the tests via this command
