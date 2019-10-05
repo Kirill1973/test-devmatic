@@ -1,7 +1,7 @@
-import { put, takeLatest } from 'redux-saga/effects';
+import { put, takeLatest } from 'redux-saga/dist/redux-saga-effects-npm-proxy.esm';
 import { getUsersData, watchUsersData } from './getDataUsers';
-import { asyncTypes } from './types/asyncTypes';
-import { types } from './types/types';
+import { asyncTypes } from '../types/asyncTypes';
+import { types } from '../types/types';
 
 describe('SAGAS', () => {
   it('should dispatch action "GET_USERS_ASYNC" ', () => {

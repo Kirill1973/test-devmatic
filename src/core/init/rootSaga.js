@@ -1,9 +1,9 @@
 import { all, call } from 'redux-saga/effects';
 
-import { watchUsersData } from '../saga/dataUsers/getDataUsers';
-import { watchAddNewUser } from '../saga/dataUsers/addNewUser';
-import { watchUserData } from '../saga/dataUser/getUserData';
-import { watchUpdateHobbies } from '../saga/dataUser/updateHobbies';
+import { watchUsersData } from '../saga/dataUsers/sagas/getDataUsers';
+import { watchAddNewUser } from '../saga/dataUsers/sagas/addNewUser';
+import { watchUserData } from '../saga/dataUser/sagas/getUserData';
+import { watchUpdateHobbies } from '../saga/dataUser/sagas/updateHobbies';
 
 export function* rootSaga(dispatch, getState) {
   yield all([

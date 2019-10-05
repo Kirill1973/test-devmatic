@@ -1,11 +1,10 @@
 import {
   put, apply, call, takeLatest,
-} from 'redux-saga/effects';
+} from 'redux-saga/dist/redux-saga-effects-npm-proxy.esm';
+import { api } from '../../../api/api';
 
-import { api } from '../../api/api';
-
-import { actions } from './actions/actions';
-import { asyncTypes } from './types/asyncTypes';
+import { actions } from '../actions/actions';
+import { asyncTypes } from '../types/asyncTypes';
 
 function* getUserData({ payload: id }) {
   const response = yield apply(api, api.getUserData, [id]);

@@ -1,7 +1,9 @@
-import { put, apply, call, takeLatest } from 'redux-saga/effects';
-import { api } from '../../api/api';
-import { actions } from './actions/actions';
-import { asyncTypes } from './types/asyncTypes';
+import {
+  put, apply, call, takeLatest,
+} from 'redux-saga/dist/redux-saga-effects-npm-proxy.esm';
+import { api } from '../../../api/api';
+import { actions } from '../actions/actions';
+import { asyncTypes } from '../types/asyncTypes';
 
 function* addNewUser({ payload }) {
   const response = yield apply(api, api.addNewUser, [payload]);
