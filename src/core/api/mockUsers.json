@@ -1,0 +1,94 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Jack",
+      "hobbies": [
+        {
+          "userId": 1,
+          "id": 1570232244327,
+          "level": "Very-High",
+          "body": "ski",
+          "yearStart": "2019"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Smith",
+      "hobbies": [
+        {
+          "userId": 2,
+          "id": 1,
+          "level": "medium",
+          "body": "football",
+          "yearStart": 2014
+        }
+      ]
+    },
+    {
+      "id": 1570206394113,
+      "name": "Kirill",
+      "hobbies": [
+        {
+          "userId": 1570206394113,
+          "id": 1570232925395,
+          "level": "Very-High",
+          "body": "ski",
+          "yearStart": "2012"
+        },
+        {
+          "userId": 1570206394113,
+          "id": 1570272889956,
+          "level": "Medium",
+          "body": "piano",
+          "yearStart": "2015"
+        }
+      ]
+    },
+    {
+      "id": 1570208969059,
+      "name": "Sergey",
+      "hobbies": [
+        {
+          "userId": 1570208969059,
+          "id": 1570232851982,
+          "level": "Very-High",
+          "body": "piano",
+          "yearStart": "2011"
+        }
+      ]
+    },
+    {
+      "id": 1570232779389,
+      "name": "David",
+      "hobbies": [
+        {
+          "userId": 1570232779389,
+          "id": 1570232907893,
+          "level": "Very-High",
+          "body": "ski",
+          "yearStart": "2018"
+        }
+      ]
+    },
+    {
+      "id": 1570233326031,
+      "name": "Hello",
+      "hobbies": []
+    },
+    {
+      "id": 1570270934008,
+      "name": "Jhon",
+      "hobbies": [
+        {
+          "userId": 1570270934008,
+          "id": 1570270966950,
+          "level": "Very-High",
+          "body": "ski",
+          "yearStart": "2012"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+.Hobbies {
+  width: 60%;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .Hobbies {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,4 @@
+export const types = Object.freeze({
+  GET_DATA_USERS_SUCCESS: 'GET_DATA_USERS_SUCCESS',
+  GET_DATA_USERS_FAIL: 'GET_DATA_USERS_FAIL',
+});

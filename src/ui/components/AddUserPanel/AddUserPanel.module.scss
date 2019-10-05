@@ -1,0 +1,32 @@
+@import "../../_helpers/sass/_variables.scss";
+
+.AddForm {
+  display: flex;
+  border: 1px solid $color-back;
+  padding: 12px;
+  border-radius: 5px;
+  &__InputBlock {
+    width: 65%;
+  }
+  &__Input {
+    width: 100%;
+    height: 83%;
+  }
+  &__Button {
+    width: 30%;
+    margin-left: 21px;
+    color: $color-text;
+    background: $color-back;
+    padding: 8px 0;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  &__Warning {
+    padding-top: 5px;
+    color: red;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}

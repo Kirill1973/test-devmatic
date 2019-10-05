@@ -1,0 +1,10 @@
+.Users {
+  width: 35%;
+}
+
+@media screen and (max-width: 800px) {
+  .Users {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

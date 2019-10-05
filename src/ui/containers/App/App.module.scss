@@ -1,0 +1,13 @@
+@import "../../_helpers/sass/_reset.scss";
+
+.App {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+  .App {
+    flex-direction: column;
+  }
+}

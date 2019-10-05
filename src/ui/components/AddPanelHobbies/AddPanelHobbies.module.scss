@@ -1,0 +1,65 @@
+@import "../../_helpers/sass/_variables.scss";
+
+.AddPanelHobbies {
+  width: 100%;
+  display: flex;
+  border: 1px solid $color-back;
+  border-radius: 5px;
+  padding: 10.5px 0;
+  &__Items {
+    width: 50%;
+    display: flex;
+  }
+  &__Item:first-child {
+    margin-left: 0;
+  }
+  &__Item {
+    width: 49%;
+    margin-left: 5px;
+  }
+  &__Input {
+    width: 100%;
+    height: 30px;
+  }
+  &__Select {
+    width: 100%;
+    height: 34px;
+  }
+  &__Button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: $color-back;
+    color: $color-text;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  &__Button:hover {
+    cursor: pointer;
+  }
+  &__Warning {
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: red;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 537px) {
+  .AddPanelHobbies {
+    &__Items {
+      flex-direction: column;
+    }
+    &__Item {
+      width: 98%;
+      margin-left: 0;
+    }
+    &__Button {
+      height: 192%;
+    }
+    &__Input {
+      width: 98%;
+    }
+  }
+}
