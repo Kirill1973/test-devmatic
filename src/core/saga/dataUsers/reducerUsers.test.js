@@ -1,6 +1,6 @@
+import { Map } from 'immutable';
 import { types } from './types/types';
 import { initialState, usersDataReducer } from './reducer';
-import { Map } from 'immutable';
 
 describe('REDUCER', () => {
   it('should return the initial state', () => expect(usersDataReducer(initialState, {})).toEqual(initialState));
