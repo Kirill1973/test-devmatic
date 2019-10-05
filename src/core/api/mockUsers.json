@@ -19,10 +19,10 @@
       "hobbies": [
         {
           "userId": 2,
-          "id": 1,
-          "level": "medium",
-          "body": "football",
-          "yearStart": 2014
+          "id": 1570285466597,
+          "level": "High",
+          "body": "ski",
+          "yearStart": "2018"
         }
       ]
     },
@@ -62,15 +62,7 @@
     {
       "id": 1570232779389,
       "name": "David",
-      "hobbies": [
-        {
-          "userId": 1570232779389,
-          "id": 1570232907893,
-          "level": "Very-High",
-          "body": "ski",
-          "yearStart": "2018"
-        }
-      ]
+      "hobbies": []
     },
     {
       "id": 1570233326031,
