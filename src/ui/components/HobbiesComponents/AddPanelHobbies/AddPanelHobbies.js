@@ -8,11 +8,11 @@ const AddPanelHobbies = () => {
 
   const dispatch = useDispatch();
 
-  const selectValue = useRef();
+  const selectValue = useRef(null);
 
-  const inputOneValue = useRef();
+  const inputOneValue = useRef(null);
 
-  const inputTwoValue = useRef();
+  const inputTwoValue = useRef(null);
 
   const [term, setTerm] = useState('');
 

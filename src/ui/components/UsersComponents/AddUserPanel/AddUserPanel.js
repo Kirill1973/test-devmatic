@@ -4,7 +4,7 @@ import Styles from './AddUserPanel.module.scss';
 import { asyncActionsUsers } from '../../../../core/saga/dataUsers/actions/asyncActionsUsers';
 
 const AddUserPanel = () => {
-  const inputValue = useRef();
+  const inputValue = useRef(null);
 
   const dispatch = useDispatch();
 
