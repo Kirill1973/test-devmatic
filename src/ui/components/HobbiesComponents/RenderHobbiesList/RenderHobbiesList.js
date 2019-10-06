@@ -1,28 +1,17 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { asyncActionsUser } from '../../../../core/saga/dataUser/actions/asyncActionUser';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import HobbiesList from '../HobbiesList/HobbiesList';
 import Styles from './RenderHobbiesList.module.scss';
 
-class RenderHobbiesList extends Component {
-  render() {
-    const { item, deleteHobby } = this.props;
-    return (
-      <div>
-        {
-          Object.keys(item).length > 0 ? <HobbiesList deleteHobby={deleteHobby} item={item} /> : <p className={Styles.RenderHobbiesList__Warning}>Select the user, please!!!</p>
-        }
-      </div>
-    );
-  }
-}
-
-const mapStateToProps = state => ({
-  item: state.userDataReducer.get('user'),
-});
-
-const mapDispatchToProps = {
-  deleteHobby: asyncActionsUser.deleteHobbyAsync,
+const RenderHobbiesList = () => {
+  const item = useSelector(state => state.userDataReducer.get('user'));
+  return (
+    <div>
+      {
+        Object.keys(item).length > 0 ? <HobbiesList item={item} /> : <p className={Styles.RenderHobbiesList__Warning}>Select the user, please!!!</p>
+      }
+    </div>
+  );
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(RenderHobbiesList);
+export default RenderHobbiesList;

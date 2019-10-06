@@ -1,36 +1,26 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { asyncActionsUsers } from '../../../../core/saga/dataUsers/actions/asyncActionsUsers';
 import { asyncActionsUser } from '../../../../core/saga/dataUser/actions/asyncActionUser';
 import Styles from './UsersList.module.scss';
 
-class UsersList extends Component {
-  componentDidMount() {
-    const { getDataAsync } = this.props;
-    getDataAsync();
-  }
+const UsersList = () => {
+  const users = useSelector(state => state.usersDataReducer.get('users'));
+  const dispatch = useDispatch();
 
-  render() {
-    const { users, getUserData } = this.props;
-    return (
-      <div className={Styles.UsersList}>
-        {
+  useEffect(() => {
+    dispatch(asyncActionsUsers.getDataAsync());
+  }, [dispatch]);
+
+  return (
+    <div className={Styles.UsersList}>
+      {
           users.map(item => (
-            <button className={Styles.UsersList__Button} onClick={() => getUserData(item.id)} key={item.id} type="button">{item.name}</button>
+            <button className={Styles.UsersList__Button} onClick={() => dispatch(asyncActionsUser.getUserAsync(item.id))} key={item.id} type="button">{item.name}</button>
           ))
         }
-      </div>
-    );
-  }
-}
-
-const mapStateToProps = state => ({
-  users: state.usersDataReducer.get('users'),
-});
-
-const mapDispatchToProps = {
-  getDataAsync: asyncActionsUsers.getDataAsync,
-  getUserData: asyncActionsUser.getUserAsync,
+    </div>
+  );
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(UsersList);
+export default UsersList;

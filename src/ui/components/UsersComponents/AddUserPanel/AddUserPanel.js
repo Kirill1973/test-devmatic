@@ -1,50 +1,42 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, { useState, useRef } from 'react';
+import { useDispatch } from 'react-redux';
 import Styles from './AddUserPanel.module.scss';
 import { asyncActionsUsers } from '../../../../core/saga/dataUsers/actions/asyncActionsUsers';
 
-class AddUserPanel extends Component {
-  inputValue = React.createRef();
+const AddUserPanel = () => {
+  const inputValue = useRef();
 
-  state = {
-    term: '',
-  };
+  const dispatch = useDispatch();
 
-  addUserHandle = (e) => {
+  const [term, setTerm] = useState('');
+
+  const addUserHandle = (e) => {
     e.preventDefault();
-    const { addUser } = this.props;
-    const { current: { value } } = this.inputValue;
+    const { current: { value } } = inputValue;
     if (value.length > 0) {
       const newUserObject = {
         id: Date.now(),
         name: value,
       };
-      addUser(newUserObject);
-      this.setState({ term: '' });
-      this.inputValue.current.value = '';
+      dispatch(asyncActionsUsers.addUserAsync(newUserObject));
+      setTerm('');
+      inputValue.current.value = '';
     } else {
-      this.setState({ term: 'enter the name, please!' });
+      setTerm('enter the name, please!');
     }
   };
 
-  render() {
-    const { term } = this.state;
-    return (
-      <>
-        <form className={Styles.AddForm} onSubmit={this.addUserHandle}>
-          <div className={Styles.AddForm__InputBlock}>
-            <input ref={this.inputValue} type="text" className={Styles.AddForm__Input} />
-          </div>
-          <button type="submit" className={Styles.AddForm__Button}>add user</button>
-        </form>
-        <p className={Styles.AddForm__Warning}>{term}</p>
-      </>
-    );
-  }
-}
-
-const mapDispatchToProps = {
-  addUser: asyncActionsUsers.addUserAsync,
+  return (
+    <>
+      <form className={Styles.AddForm} onSubmit={addUserHandle}>
+        <div className={Styles.AddForm__InputBlock}>
+          <input ref={inputValue} type="text" className={Styles.AddForm__Input} />
+        </div>
+        <button type="submit" className={Styles.AddForm__Button}>add user</button>
+      </form>
+      <p className={Styles.AddForm__Warning}>{term}</p>
+    </>
+  );
 };
 
-export default connect(null, mapDispatchToProps)(AddUserPanel);
+export default AddUserPanel;
