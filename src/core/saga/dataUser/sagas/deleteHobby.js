@@ -10,7 +10,7 @@ import { asyncTypes } from '../types/asyncTypes';
 
 function* deleteHobby({ payload: { hobbyId, userId } }) {
   const response = yield apply(api, api.deleteHobby, [hobbyId]);
-  if (response.status >= 200 && response.status < 300) {
+  if (response.status === 200) {
     const responseUserData = yield apply(api, api.getUserData, [userId]);
     const body = yield call([responseUserData, 'json']);
     yield put(actions.getDataUserSuccess(body));

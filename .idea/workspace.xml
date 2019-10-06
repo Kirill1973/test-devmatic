@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd3e6b24-b07b-4447-875b-ab1ad1f65a69" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/api/mockUsers.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/api/mockUsers.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/init/rootSaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/init/rootSaga.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/saga/dataUser/actions/asyncActionUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/saga/dataUser/actions/asyncActionUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/saga/dataUser/sagas/updateHobbies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/saga/dataUser/sagas/addHobby.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/saga/dataUser/types/asyncTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/saga/dataUser/types/asyncTypes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/AddPanelHobbies/AddPanelHobbies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/HobbiesComponents/AddPanelHobbies/AddPanelHobbies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/AddPanelHobbies/AddPanelHobbies.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/HobbiesComponents/AddPanelHobbies/AddPanelHobbies.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/AddUserPanel/AddUserPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/UsersComponents/AddUserPanel/AddUserPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/AddUserPanel/AddUserPanel.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/UsersComponents/AddUserPanel/AddUserPanel.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/Hobbies/Hobbies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/HobbiesComponents/Hobbies/Hobbies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/Hobbies/Hobbies.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/HobbiesComponents/Hobbies/Hobbies.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/HobbiesList/HobbiesList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/HobbiesComponents/HobbiesList/HobbiesList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/HobbiesList/HobbiesList.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/HobbiesComponents/HobbiesList/HobbiesList.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/RenderHobbiesList/RenderHobbiesList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/HobbiesComponents/RenderHobbiesList/RenderHobbiesList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/RenderHobbiesList/RenderHobbiesList.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/HobbiesComponents/RenderHobbiesList/RenderHobbiesList.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/Users/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/UsersComponents/Users/Users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/Users/Users.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/UsersComponents/Users/Users.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/UsersList/UsersList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/UsersComponents/UsersList/UsersList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/UsersList/UsersList.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/UsersComponents/UsersList/UsersList.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/containers/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/containers/App/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/saga/dataUser/sagas/deleteHobby.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/saga/dataUser/sagas/deleteHobby.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/core/saga/dataUser/sagas/deleteHobby.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="11" column="64" lean-forward="true" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
+            <state relative-caret-position="144">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="e#0#69#0" expanded="true" />
               </folding>
@@ -429,15 +408,16 @@
       <workItem from="1570182611872" duration="41549000" />
       <workItem from="1570270577610" duration="10421000" />
       <workItem from="1570283864767" duration="4151000" />
-      <workItem from="1570366333831" duration="5476000" />
+      <workItem from="1570366333831" duration="5609000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66731000" />
+    <option name="totallyTimeSpent" value="66864000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26308724" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -889,8 +869,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/saga/dataUser/sagas/deleteHobby.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="64" lean-forward="true" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
+        <state relative-caret-position="144">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="e#0#69#0" expanded="true" />
           </folding>
