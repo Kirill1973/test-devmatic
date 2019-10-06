@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Styles from './AddUserPanel.module.scss';
-import { asyncActionsUsers } from '../../../core/saga/dataUsers/actions/asyncActionsUsers';
+import { asyncActionsUsers } from '../../../../core/saga/dataUsers/actions/asyncActionsUsers';
 
 class AddUserPanel extends Component {
   inputValue = React.createRef();
@@ -18,7 +18,6 @@ class AddUserPanel extends Component {
       const newUserObject = {
         id: Date.now(),
         name: value,
-        hobbies: [],
       };
       addUser(newUserObject);
       this.setState({ term: '' });
@@ -31,13 +30,15 @@ class AddUserPanel extends Component {
   render() {
     const { term } = this.state;
     return (
-      <form className={Styles.AddForm} onSubmit={this.addUserHandle}>
-        <div className={Styles.AddForm__InputBlock}>
-          <input ref={this.inputValue} type="text" className={Styles.AddForm__Input} />
-          <p className={Styles.AddForm__Warning}>{term}</p>
-        </div>
-        <button type="submit" className={Styles.AddForm__Button}>add user</button>
-      </form>
+      <>
+        <form className={Styles.AddForm} onSubmit={this.addUserHandle}>
+          <div className={Styles.AddForm__InputBlock}>
+            <input ref={this.inputValue} type="text" className={Styles.AddForm__Input} />
+          </div>
+          <button type="submit" className={Styles.AddForm__Button}>add user</button>
+        </form>
+        <p className={Styles.AddForm__Warning}>{term}</p>
+      </>
     );
   }
 }

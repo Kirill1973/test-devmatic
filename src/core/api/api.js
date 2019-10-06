@@ -9,12 +9,13 @@ export const api = {
     },
     body: JSON.stringify(data),
   }),
-  getUserData: id => fetch(`${constants.apiUrl}/users/${id}`),
-  updateHobbies: (data, id) => fetch(`${constants.apiUrl}/users/${id}`, {
-    method: 'PUT',
+  getUserData: id => fetch(`${constants.apiUrl}/users/${id}?_embed=hobbies`),
+  addHobby: data => fetch(`${constants.apiUrl}/hobbies`, {
+    method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(data),
   }),
+  deleteHobby: id => fetch(`${constants.apiUrl}/hobbies/${id}`, { method: 'delete' }),
 };

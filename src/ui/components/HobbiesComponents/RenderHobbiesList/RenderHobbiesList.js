@@ -1,23 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { asyncActionsUser } from '../../../core/saga/dataUser/actions/asyncActionUser';
+import { asyncActionsUser } from '../../../../core/saga/dataUser/actions/asyncActionUser';
 import HobbiesList from '../HobbiesList/HobbiesList';
 import Styles from './RenderHobbiesList.module.scss';
 
 class RenderHobbiesList extends Component {
-
   onDeleteHobby = (id) => {
     const { item, deleteHobby } = this.props;
-    const idx = item.hobbies.findIndex(hobby => hobby.id === id);
-    const newObj = {
-      id: item.id,
-      name: item.name,
-      hobbies: [
-        ...item.hobbies.slice(0, idx),
-        ...item.hobbies.slice(idx + 1),
-      ],
-    };
-    deleteHobby(newObj, item.id);
+    deleteHobby(id, item.id);
   };
 
   render() {
@@ -37,7 +27,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = {
-  deleteHobby: asyncActionsUser.updateHobbiesAsync,
+  deleteHobby: asyncActionsUser.deleteHobbyAsync,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(RenderHobbiesList);

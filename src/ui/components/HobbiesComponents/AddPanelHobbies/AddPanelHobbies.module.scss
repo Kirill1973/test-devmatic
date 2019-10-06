@@ -1,4 +1,4 @@
-@import "../../_helpers/sass/_variables.scss";
+@import "../../../_helpers/sass/variables";
 
 .AddPanelHobbies {
   width: 100%;
@@ -39,7 +39,7 @@
     cursor: pointer;
   }
   &__Warning {
-    margin-top: 20px;
+    margin-top: 7px;
     text-transform: uppercase;
     color: red;
     font-weight: bold;

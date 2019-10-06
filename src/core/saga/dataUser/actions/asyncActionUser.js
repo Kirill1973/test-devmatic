@@ -5,9 +5,15 @@ export const asyncActionsUser = Object.freeze({
     type: asyncTypes.GET_USER_ASYNC,
     payload: id,
   }),
-  updateHobbiesAsync: (data, id) => ({
-    type: asyncTypes.UPDATE_HOBBIES_ASYNC,
+  addHobbiesAsync: (data, id) => ({
+    type: asyncTypes.ADD_HOBBIES_ASYNC,
     payload: data,
     userId: id,
+  }),
+  deleteHobbyAsync: (hobbyId, userId) => ({
+    type: asyncTypes.DELETE_HOBBY_ASYNC,
+    payload: {
+      hobbyId, userId,
+    },
   }),
 });

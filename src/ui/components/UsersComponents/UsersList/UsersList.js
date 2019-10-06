@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { asyncActionsUsers } from '../../../core/saga/dataUsers/actions/asyncActionsUsers';
-import { asyncActionsUser } from '../../../core/saga/dataUser/actions/asyncActionUser';
+import { asyncActionsUsers } from '../../../../core/saga/dataUsers/actions/asyncActionsUsers';
+import { asyncActionsUser } from '../../../../core/saga/dataUser/actions/asyncActionUser';
 import Styles from './UsersList.module.scss';
 
 class UsersList extends Component {

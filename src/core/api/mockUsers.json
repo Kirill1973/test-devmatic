@@ -2,85 +2,69 @@
   "users": [
     {
       "id": 1,
-      "name": "Jack",
-      "hobbies": [
-        {
-          "userId": 1,
-          "id": 1570232244327,
-          "level": "Very-High",
-          "body": "ski",
-          "yearStart": "2019"
-        }
-      ]
+      "name": "Jack"
     },
     {
       "id": 2,
-      "name": "Smith",
-      "hobbies": [
-        {
-          "userId": 2,
-          "id": 1570285466597,
-          "level": "High",
-          "body": "ski",
-          "yearStart": "2018"
-        }
-      ]
+      "name": "Smith"
     },
     {
       "id": 1570206394113,
-      "name": "Kirill",
-      "hobbies": [
-        {
-          "userId": 1570206394113,
-          "id": 1570232925395,
-          "level": "Very-High",
-          "body": "ski",
-          "yearStart": "2012"
-        },
-        {
-          "userId": 1570206394113,
-          "id": 1570272889956,
-          "level": "Medium",
-          "body": "piano",
-          "yearStart": "2015"
-        }
-      ]
+      "name": "Kirill"
     },
     {
       "id": 1570208969059,
-      "name": "Sergey",
-      "hobbies": [
-        {
-          "userId": 1570208969059,
-          "id": 1570232851982,
-          "level": "Very-High",
-          "body": "piano",
-          "yearStart": "2011"
-        }
-      ]
+      "name": "Sergey"
     },
     {
       "id": 1570232779389,
-      "name": "David",
-      "hobbies": []
+      "name": "David"
     },
     {
       "id": 1570233326031,
-      "name": "Hello",
-      "hobbies": []
+      "name": "Hello"
     },
     {
       "id": 1570270934008,
-      "name": "Jhon",
-      "hobbies": [
-        {
-          "userId": 1570270934008,
-          "id": 1570270966950,
-          "level": "Very-High",
-          "body": "ski",
-          "yearStart": "2012"
-        }
-      ]
+      "name": "Jhon"
+    },
+    {
+      "id": 1570296552793,
+      "name": "New User"
+    },
+    {
+      "id": 1570369419926,
+      "name": "New User 2"
+    }
+  ],
+  "hobbies": [
+    {
+      "userId": 2,
+      "id": 2,
+      "level": "medium",
+      "body": "piano",
+      "yearStart": 2014
+    },
+    {
+      "userId": 1570206394113,
+      "id": 1570372099487,
+      "level": "Medium",
+      "body": "ski",
+      "yearStart": "2011"
+    },
+    {
+      "userId": 2,
+      "id": 1570372113207,
+      "level": "High",
+      "body": "ski",
+      "yearStart": "2014"
+    },
+    {
+      "userId": 1570296552793,
+      "id": 1570372257983,
+      "level": "Low",
+      "body": "walk",
+      "yearStart": "2017"
     }
   ]
 }

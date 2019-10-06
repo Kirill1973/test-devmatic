@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { asyncActionsUser } from '../../../core/saga/dataUser/actions/asyncActionUser';
+import { asyncActionsUser } from '../../../../core/saga/dataUser/actions/asyncActionUser';
 import Styles from './AddPanelHobbies.module.scss';
 
 class AddPanelHobbies extends Component {
@@ -22,18 +22,11 @@ class AddPanelHobbies extends Component {
     const { current: { value: inputTwoValue } } = this.inputTwoValue;
     if (selectValue !== 'DEFAULT' && inputOneValue.length > 0 && inputTwoValue.length > 0) {
       const newObj = {
-        id: item.id,
-        name: item.name,
-        hobbies: [
-          ...item.hobbies,
-          {
-            userId: item.id,
-            id: Date.now(),
-            level: selectValue,
-            body: inputOneValue,
-            yearStart: inputTwoValue,
-          },
-        ],
+        userId: item.id,
+        id: Date.now(),
+        level: selectValue,
+        body: inputOneValue,
+        yearStart: inputTwoValue,
       };
       addNewHobby(newObj, item.id);
       this.inputOneValue.current.value = '';
@@ -83,7 +76,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = {
-  addNewHobby: asyncActionsUser.updateHobbiesAsync,
+  addNewHobby: asyncActionsUser.addHobbiesAsync,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(AddPanelHobbies);

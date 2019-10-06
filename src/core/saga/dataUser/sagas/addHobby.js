@@ -8,9 +8,9 @@ import { actions } from '../actions/actions';
 
 import { asyncTypes } from '../types/asyncTypes';
 
-function* updateHobbies({ payload: data, userId: id }) {
-  const response = yield apply(api, api.updateHobbies, [data, id]);
-  if (response.status === 200) {
+function* addHobby({ payload: data, userId: id }) {
+  const response = yield apply(api, api.addHobby, [data]);
+  if (response.status === 201) {
     const responseUserData = yield apply(api, api.getUserData, [id]);
     const body = yield call([responseUserData, 'json']);
     yield put(actions.getDataUserSuccess(body));
@@ -19,6 +19,6 @@ function* updateHobbies({ payload: data, userId: id }) {
   }
 }
 
-export function* watchUpdateHobbies() {
-  yield takeLatest(asyncTypes.UPDATE_HOBBIES_ASYNC, updateHobbies);
+export function* watchAddHobby() {
+  yield takeLatest(asyncTypes.ADD_HOBBIES_ASYNC, addHobby);
 }
