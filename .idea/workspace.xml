@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd3e6b24-b07b-4447-875b-ab1ad1f65a69" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/core/saga/dataUser/sagas/deleteHobby.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/saga/dataUser/sagas/deleteHobby.js" afterDir="false" />
-    </list>
+    <list default="true" id="dd3e6b24-b07b-4447-875b-ab1ad1f65a69" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -360,7 +358,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -408,16 +406,15 @@
       <workItem from="1570182611872" duration="41549000" />
       <workItem from="1570270577610" duration="10421000" />
       <workItem from="1570283864767" duration="4151000" />
-      <workItem from="1570366333831" duration="5609000" />
+      <workItem from="1570366333831" duration="5682000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66864000" />
+    <option name="totallyTimeSpent" value="66937000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26308724" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

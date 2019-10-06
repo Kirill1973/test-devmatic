@@ -5,17 +5,12 @@ import HobbiesList from '../HobbiesList/HobbiesList';
 import Styles from './RenderHobbiesList.module.scss';
 
 class RenderHobbiesList extends Component {
-  onDeleteHobby = (id) => {
-    const { item, deleteHobby } = this.props;
-    deleteHobby(id, item.id);
-  };
-
   render() {
-    const { item } = this.props;
+    const { item, deleteHobby } = this.props;
     return (
       <div>
         {
-          Object.keys(item).length > 0 ? <HobbiesList deleteHobby={this.onDeleteHobby} item={item} /> : <p className={Styles.RenderHobbiesList__Warning}>Select the user, please!!!</p>
+          Object.keys(item).length > 0 ? <HobbiesList deleteHobby={deleteHobby} item={item} /> : <p className={Styles.RenderHobbiesList__Warning}>Select the user, please!!!</p>
         }
       </div>
     );

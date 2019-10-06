@@ -40,20 +40,6 @@
   "hobbies": [
     {
       "userId": 2,
-      "id": 2,
-      "level": "medium",
-      "body": "piano",
-      "yearStart": 2014
-    },
-    {
-      "userId": 1570206394113,
-      "id": 1570372099487,
-      "level": "Medium",
-      "body": "ski",
-      "yearStart": "2011"
-    },
-    {
-      "userId": 2,
       "id": 1570372113207,
       "level": "High",
       "body": "ski",
@@ -65,6 +51,13 @@
       "level": "Low",
       "body": "walk",
       "yearStart": "2017"
+    },
+    {
+      "userId": 1570206394113,
+      "id": 1570373227263,
+      "level": "Medium",
+      "body": "ski",
+      "yearStart": "2011"
     }
   ]
 }

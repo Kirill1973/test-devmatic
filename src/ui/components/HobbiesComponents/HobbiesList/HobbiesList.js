@@ -12,7 +12,7 @@ const HobbiesList = ({ item, deleteHobby }) => (
           <p>Passion: {hobby.level}</p>
           <p>{hobby.body}</p>
           <p>since: {hobby.yearStart}</p>
-          <button onClick={() => deleteHobby(hobby.id)} type="button"><FontAwesomeIcon icon={faTrashAlt} /></button>
+          <button onClick={() => deleteHobby(hobby.id, item.id)} type="button"><FontAwesomeIcon icon={faTrashAlt} /></button>
         </div>
       )) : <p className={Styles.HobbiesList__Info}>{item.name} has not hobbies</p>
     }
