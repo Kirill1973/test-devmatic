@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { asyncActionsUser } from '../../../../core/saga/dataUser/actions/asyncActionUser';
@@ -22,6 +23,10 @@ const HobbiesList = ({ item }) => {
       }
     </div>
   );
+};
+
+HobbiesList.propTypes = {
+  item: PropTypes.object,
 };
 
 export default HobbiesList;
